@@ -1,0 +1,1287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+    }
+}
+
+/*HEADER*/
+
+header img[src ="img/P_date_tag.png"] {
+    position: relative;
+    left: 2vw;
+    width: 150px;
+}
+
+@media (max-width: 1200px) {
+    header img[src ="img/P_date_tag.png"] {
+        width: 145px;
+    }
+}
+
+@media (max-width: 992px) {
+    header img[src ="img/P_date_tag.png"] {
+        width: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    header img[src ="img/P_date_tag.png"] {
+        width: 135px;
+    }
+}
+
+@media (max-width: 414px) {
+    header img[src ="img/P_date_tag.png"] {
+        width: 130px;
+    }
+}
+
+@media (max-height: 622px) {
+    header img[src ="img/P_date_tag.png"] {
+        width: 120px;
+    }
+}
+
+@media (max-width: 375px) {
+    header img[src ="img/P_date_tag.png"] {
+        width: 110px;
+    }
+}
+
+@media (max-height: 559px) {
+    header img[src ="img/P_date_tag.png"] {
+        width: 105px;
+    }
+}
+/*ADVERTISING*/
+
+.advertising img[src ="img/P_main_copy.png"] {
+    position: relative;
+    opacity: 0;
+    top: 0;
+    transform: scale(0.6);
+    padding: 0 30vw 0 30vw;
+    animation: maincopy 350ms 400ms linear forwards;
+}
+
+@keyframes maincopy {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.advertising content {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    animation: advert 400ms 3000ms linear forwards;
+}
+
+@keyframes advert {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.2;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.clocks {/*****/
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -18vh;
+    left: 0;
+    transform: scale(0.55);
+}
+
+.clocks img[src ="img/P_Versa_Pink.png"] {
+    position: relative;
+    opacity: 0;
+    top: -200px;
+    left: 19vw;
+    animation: pinkclock 350ms 150ms linear forwards;
+}
+
+@keyframes pinkclock {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.clocks img[src ="img/P_Charge3_Lilac.png"] {
+    position: relative;
+    opacity: 0;
+    top: -1vh;
+    z-index: -1;
+    transform: scale(0.9);
+    animation: purpleclock 400ms ease-in forwards;
+}
+
+@keyframes purpleclock {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.clocks img[src ="img/P_HR_White.png"] {
+    position: relative;
+    opacity: 0;
+    top: 180px;
+    left: -23vw;
+    z-index: -2;
+    transform: scale(0.85);
+    animation: greyclock 350ms 200ms linear forwards;
+}
+
+@keyframes greyclock {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.advertising content img[src ="img/P_shadow.png"] {
+    position: relative;
+    top: -42vh;
+    opacity: 0;
+    width: 35vw;
+    left: 30vw;
+    animation: shadow 350ms 700ms linear forwards;
+}
+
+@keyframes shadow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.advertising content img[src ="img/P_intro_pricetag.png"] {
+    position: relative;
+    opacity: 0;
+    top: -55vh;
+    width: 15vw;
+    left: 42vw;
+    transform: scale(0.65);
+    animation: intropricetag 350ms 400ms linear forwards;
+}
+
+@keyframes intropricetag {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .clocks {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 5vw;
+        top: -22vh;
+        transform: scale(0.45);
+    }
+
+    .clocks img[src ="img/P_Versa_Pink.png"] {
+        position: relative;
+        top: -200px;
+        left: 22vw;
+    }
+
+    .clocks img[src ="img/P_HR_White.png"] {
+        position: relative;
+        top: 180px;
+        left: -27vw;
+        z-index: -2;
+        transform: scale(0.85);
+    }
+
+    .advertising content img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -47vh;
+        width: 30vw;
+        left: 37vw;
+    }
+
+    .advertising content img[src ="img/P_intro_pricetag.png"] {
+        position: relative;
+        top: -56vh;
+        width: 15vw;
+        left: 46vw;
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 992px) {
+    .advertising img[src ="img/P_main_copy.png"] {
+        position: relative;
+        transform: scale(0.55);
+        padding: 0 40vw 0 20vw;
+    }
+
+    .clocks {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 2vw;
+        top: -24vh;
+        transform: scale(0.4);
+    }
+
+    .clocks img[src ="img/P_Versa_Pink.png"] {
+        position: relative;
+        top: -200px;
+        left: 26vw;
+    }
+
+    .clocks img[src ="img/P_HR_White.png"] {
+        position: relative;
+        top: 180px;
+        left: -32vw;
+        z-index: -2;
+        transform: scale(0.85);
+    }
+
+    .advertising content img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -48vh;
+        width: 30vw;
+        left: 36vw;
+    }
+
+    .advertising content img[src ="img/P_intro_pricetag.png"] {
+        position: relative;
+        top: -56vh;
+        width: 15vw;
+        left: 44vw;
+        transform: scale(0.65);
+    }
+}
+
+@media (max-width: 768px) {
+    .advertising img[src ="img/P_main_copy.png"] {
+        position: relative;
+        top: 7vh;
+        transform: scale(1);
+        padding: 0 30vw 0 15vw;
+    }
+
+    .clocks {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 2vw;
+        top: 0;
+        transform: scale(0.7);
+    }
+
+    .clocks img[src ="img/P_Versa_Pink.png"] {
+        position: relative;
+        top: -200px;
+        left: 35vw;
+    }
+
+    .clocks img[src ="img/P_HR_White.png"] {
+        position: relative;
+        top: 180px;
+        left: -41vw;
+        z-index: -2;
+        transform: scale(0.85);
+    }
+
+    .advertising content img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -12vh;
+        width: 80vw;
+        left: 10vw;
+    }
+
+    .advertising content img[src ="img/P_intro_pricetag.png"] {
+        position: relative;
+        top: -12vh;
+        width: 15vw;
+        left: 44vw;
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width: 414px) {
+    .advertising img[src ="img/P_main_copy.png"] {
+        position: relative;
+        top: 0;
+        transform: scale(0.55);
+        left: -18vw;
+        padding: 0 15vw 0 0;
+    }
+
+    .clocks {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 2vw;
+        top: -25vh;
+        transform: scale(0.4);
+    }
+
+    .clocks img[src ="img/P_Versa_Pink.png"] {
+        position: relative;
+        top: -200px;
+        left: 62vw;
+    }
+
+    .clocks img[src ="img/P_HR_White.png"] {
+        position: relative;
+        top: 180px;
+        left: -76vw;
+        z-index: -2;
+        transform: scale(0.85);
+    }
+
+    .advertising content img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -50vh;
+        width: 80vw;
+        left: 10vw;
+    }
+
+    .advertising content img[src ="img/P_intro_pricetag.png"] {
+        position: relative;
+        top: -48vh;
+        width: 15vw;
+        left: 44vw;
+        transform: scale(1.5);
+    }
+}
+
+@media (max-height: 622px) {
+    .advertising img[src ="img/P_main_copy.png"] {
+        position: relative;
+        top: -2vh;
+        transform: scale(0.55);
+        left: -18vw;
+        padding: 0 15vw 0 0;
+    }
+
+    .clocks {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 2vw;
+        top: -32vh;
+        transform: scale(0.4);
+    }
+
+    .advertising content img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -60vh;
+        width: 75vw;
+        left: 10vw;
+    }
+
+    .advertising content img[src ="img/P_intro_pricetag.png"] {
+        position: relative;
+        top: -58vh;
+        width: 15vw;
+        left: 44vw;
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width: 375px) {
+    .advertising img[src ="img/P_main_copy.png"] {
+        position: relative;
+        top: -1vh;
+        transform: scale(0.48);
+        left: -25vw;
+        padding: 0 15vw 0 0;
+    }
+
+    .clocks {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 2vw;
+        top: -28vh;
+        transform: scale(0.4);
+    }
+
+    .clocks img[src ="img/P_Versa_Pink.png"] {
+        position: relative;
+        top: -200px;
+        left: 68vw;
+    }
+
+    .clocks img[src ="img/P_HR_White.png"] {
+        position: relative;
+        top: 180px;
+        left: -85vw;
+        z-index: -2;
+        transform: scale(0.85);
+    }
+
+    .advertising content img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -55vh;
+        width: 80vw;
+        left: 10vw;
+    }
+
+    .advertising content img[src ="img/P_intro_pricetag.png"] {
+        position: relative;
+        top: -52vh;
+        width: 15vw;
+        left: 44vw;
+        transform: scale(1.5);
+    }
+}
+
+@media (max-height: 559px) {
+    .advertising img[src ="img/P_main_copy.png"] {
+        position: relative;
+        top: -3vh;
+        transform: scale(0.48);
+        left: -24vw;
+        padding: 0 15vw 0 0;
+    }
+
+    .clocks {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 6vw;
+        top: -37vh;
+        transform: scale(0.4);
+    }
+
+    .advertising content img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -70vh;
+        width: 75vw;
+    }
+
+    .advertising content img[src ="img/P_intro_pricetag.png"] {
+        position: relative;
+        top: -67vh;
+        width: 15vw;
+        left: 44vw;
+        transform: scale(1.5);
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: -16vh;
+}
+
+footer img[src ="img/P_fitbit_logo.png"] {
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+footer img[src ="img/P_CTA.png"] {
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+@media (max-width: 1200px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: -12vh;
+    }
+
+    footer img[src ="img/P_fitbit_logo.png"] {
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+    
+    footer img[src ="img/P_CTA.png"] {
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: -11vh;
+    }
+
+    footer img[src ="img/P_fitbit_logo.png"] {
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+    
+    footer img[src ="img/P_CTA.png"] {
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: -3vh;
+    }
+}
+
+@media (max-width: 414px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: -10vh;
+    }
+
+    footer img[src ="img/P_fitbit_logo.png"] {
+        position: relative;
+        left: 15vw;
+        cursor: pointer;
+        transform: scale(0.55);
+    }
+    
+    footer img[src ="img/P_CTA.png"] {
+        position: relative;
+        left: -8vw;
+        cursor: pointer;
+        transform: scale(0.55);
+    }
+}
+
+@media (max-height: 622px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: -15vh;
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: -14vh;
+    }
+
+    footer img[src ="img/P_fitbit_logo.png"] {
+        position: relative;
+        left: 18vw;
+        cursor: pointer;
+        transform: scale(0.45);
+    }
+    
+    footer img[src ="img/P_CTA.png"] {
+        position: relative;
+        left: -11vw;
+        cursor: pointer;
+        transform: scale(0.45);
+    }
+}
+
+@media (max-height: 559px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: -18vh;
+    }
+}
+
+/*BACKGROUND*/
+
+img[src ="img/P_bg.jpg"] {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    padding: 0;
+    z-index: -3;
+}
+
+ /*LEFT*/
+
+img[alt="P_arrow_left"] {
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1);
+    top: -70vh;
+    left: 3vw;
+    animation: arrowleft 400ms 4000ms linear forwards;
+}
+
+@keyframes arrowleft {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    20% {
+        visibility: visible;
+        opacity: 0.2;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    img[alt="P_arrow_left"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.9);
+        top: -70vh;
+        left: 2vw;
+    }
+}
+
+@media (max-width: 992px) {
+    img[alt="P_arrow_left"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.8);
+        top: -70vh;
+        left: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    img[alt="P_arrow_left"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.9);
+        top: -60vh;
+        left: 2vw;
+    }
+}
+
+@media (max-width: 414px) {
+    img[alt="P_arrow_left"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.7);
+        top: -78vh;
+        left: 2vw;
+    }
+}
+
+@media (max-width: 375px) {
+    img[alt="P_arrow_left"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.6);
+        top: -80vh;
+        left: 2vw;
+    }
+}
+
+@media (max-height: 559px) {
+    img[alt="P_arrow_left"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.6);
+        top: -85vh;
+        left: 2vw;
+    }
+}
+
+/*RIGHT*/
+
+img[alt="P_arrow_right"] {
+    position: relative;
+    cursor: pointer;
+    visibility: hidden;
+    transform: scale(1);
+    opacity: 0;
+    top: -70vh;
+    left: 87vw;
+    animation: arrowright 400ms 4000ms linear forwards;
+}
+
+@keyframes arrowright {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    20% {
+        visibility: visible;
+        opacity: 0.2;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    img[alt="P_arrow_right"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.9);
+        top: -70vh;
+        left: 86vw;
+    }
+}
+
+@media (max-width: 992px) {
+    img[alt="P_arrow_right"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.8);
+        top: -70vh;
+        left: 82vw;
+    }
+}
+
+@media (max-width: 768px) {
+    img[alt="P_arrow_right"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.9);
+        top: -60vh;
+        left: 80vw;
+    }
+}
+
+@media (max-width: 414px) {
+    img[alt="P_arrow_right"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.7);
+        top: -78vh;
+        left: 65vw;
+    }
+}
+
+@media (max-width: 375px) {
+    img[alt="P_arrow_right"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.6);
+        top: -80vh;
+        left: 60vw;
+    }
+}
+
+@media (max-height: 559px) {
+    img[alt="P_arrow_right"] {
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.6);
+        top: -85vh;
+        left: 62vw;
+    }
+}
+
+/*OWL-CAROUSEL*/
+
+#headerSlider.owl-carousel .owl-stage-outer {
+    overflow: visible;
+    height: 0;
+}
+
+.owl-carousel .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -20vh;
+    height: 0;
+    left: 0;
+    width: 20vw;
+    visibility: hidden;
+    opacity: 0;
+    animation: sidebars 400ms 4000ms linear forwards;
+}
+
+@keyframes sidebars {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    20% {
+        visibility: visible;
+        opacity: 0.2;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.owl-carousel .sidebar img[alt="P_Clocks1"] {
+    transform: scale(0.58);
+    width: 32vw;
+    position: relative;
+    top: -41vh;
+    left: 33vw;
+}
+
+.owl-carousel .sidebar img[src ="img/P_shadow.png"] {
+    position: relative;
+    top: -65vh;
+    width: 35vw;
+    left: 30vw;
+}
+
+.owl-carousel .sidebar .colors {
+    transform: scale(0.55);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -73vh;
+    left: 38vw;
+}
+
+.owl-carousel .sidebar .colors img[alt="P_Colors1"],
+.owl-carousel .sidebar .colors img[alt="P_Colors2"], 
+.owl-carousel .sidebar .colors img[alt="P_Colors3"] {
+    cursor: pointer;
+    margin-right: 3.5vw;
+}
+
+.owl-carousel .sidebar img[alt="Lockup"] {
+    width: 14vw;
+    position: relative;
+    top: -73vh;
+    left: 40vw;
+}
+
+.owl-carousel .sidebar img[alt="Price"],
+.owl-carousel .sidebar img[alt="Price_150"] {
+    width: 10vw;
+    position: relative;
+    top: -70vh;
+    left: 62vw;
+}
+
+.owl-carousel .sidebar img[alt="Price_150"] {
+    top: -72vh;
+}
+
+@media (max-width: 1200px) {
+    .owl-carousel .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -26vh;
+        height: 0;
+        left: 4vw;
+        width: 20vw;
+    }
+
+    .owl-carousel .sidebar img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -57vh;
+        width: 35vw;
+        left: 30vw;
+    }
+
+    .owl-carousel .sidebar .colors {
+        transform: scale(0.55);
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -65vh;
+        left: 38vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Lockup"] {
+        width: 14vw;
+        position: relative;
+        top: -65vh;
+        left: 41vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price"],
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        width: 10vw;
+        position: relative;
+        top: -52vh;
+        left: 62vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        top: -54vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .owl-carousel .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -30vh;
+        height: 0;
+        left: 3vw;
+        width: 20vw;
+    }
+
+    .owl-carousel .sidebar img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -52vh;
+        width: 30vw;
+        left: 32vw;
+    }
+
+    .owl-carousel .sidebar .colors {
+        transform: scale(0.55);
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -58vh;
+        left: 36vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Lockup"] {
+        width: 18vw;
+        position: relative;
+        top: -58vh;
+        left: 39vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price"],
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        width: 14vw;
+        position: relative;
+        top: -40vh;
+        left: 58vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        top: -41vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .owl-carousel .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -15vh;
+        height: 0;
+        left: 3vw;
+        width: 20vw;
+    }
+
+    .owl-carousel .sidebar img[alt="P_Clocks1"] {
+        transform: scale(1.42);
+        width: 32vw;
+        position: relative;
+        top: -35vh;
+        left: 33vw;
+    }
+
+    .owl-carousel .sidebar img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -32vh;
+        width: 68vw;
+        left: 16vw;
+    }
+
+    .owl-carousel .sidebar .colors {
+        transform: scale(0.85);
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -38vh;
+        left: 32vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Lockup"] {
+        width: 32vw;
+        position: relative;
+        top: -37vh;
+        left: 31vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price"],
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        width: 22vw;
+        position: relative;
+        top: -31vh;
+        left: 56vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        top: -33vh;
+    }
+}
+
+@media (max-width: 414px) {
+    .owl-carousel .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -36vh;
+        height: 0;
+        left: 3vw;
+        width: 20vw;
+    }
+
+    .owl-carousel .sidebar img[alt="P_Clocks1"] {
+        transform: scale(1.42);
+        width: 32vw;
+        position: relative;
+        top: -35vh;
+        left: 33vw;
+    }
+
+    .owl-carousel .sidebar img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -32vh;
+        width: 73vw;
+        left: 11vw;
+    }
+
+    .owl-carousel .sidebar .colors {
+        transform: scale(0.55);
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -38vh;
+        left: 26vw;
+    }
+
+    .owl-carousel .sidebar .colors img[alt="P_Colors1"],
+    .owl-carousel .sidebar .colors img[alt="P_Colors2"], 
+    .owl-carousel .sidebar .colors img[alt="P_Colors3"] {
+        cursor: pointer;
+        margin-right: 5vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Lockup"] {
+        width: 38vw;
+        position: relative;
+        top: -37vh;
+        left: 26vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price"],
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        width: 30vw;
+        position: relative;
+        top: -17vh;
+        left: 54vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        top: -18.5vh;
+    }
+}
+
+@media (max-height: 622px) {
+    .owl-carousel .sidebar img[alt="Price"],
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        width: 30vw;
+        position: relative;
+        top: -30vh;
+        left: 52vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        top: -32vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .owl-carousel .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -38vh;
+        height: 0;
+        left: 3vw;
+        width: 20vw;
+    }
+
+    .owl-carousel .sidebar img[alt="P_Clocks1"] {
+        transform: scale(1.5);
+        width: 32vw;
+        position: relative;
+        top: -35vh;
+        left: 33vw;
+    }
+
+    .owl-carousel .sidebar img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -30vh;
+        width: 73vw;
+        left: 11vw;
+    }
+
+    .owl-carousel .sidebar .colors {
+        transform: scale(0.5);
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -36vh;
+        left: 26vw;
+    }
+
+    .owl-carousel .sidebar .colors img[alt="P_Colors1"],
+    .owl-carousel .sidebar .colors img[alt="P_Colors2"], 
+    .owl-carousel .sidebar .colors img[alt="P_Colors3"] {
+        cursor: pointer;
+        margin-right: 6.5vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Lockup"] {
+        width: 38vw;
+        position: relative;
+        top: -35vh;
+        left: 26vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price"],
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        width: 30vw;
+        position: relative;
+        top: -21vh;
+        left: 54vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        top: -22.5vh;
+    }
+}
+
+@media (max-height: 559px) {
+    .owl-carousel .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -42vh;
+        height: 0;
+        left: 3vw;
+        width: 20vw;
+    }
+
+    .owl-carousel .sidebar img[alt="P_Clocks1"] {
+        transform: scale(1.5);
+        width: 32vw;
+        position: relative;
+        top: -35vh;
+        left: 33vw;
+    }
+
+    .owl-carousel .sidebar img[src ="img/P_shadow.png"] {
+        position: relative;
+        top: -30vh;
+        width: 73vw;
+        left: 11vw;
+    }
+
+    .owl-carousel .sidebar .colors {
+        transform: scale(0.5);
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -36vh;
+        left: 26vw;
+    }
+
+    .owl-carousel .sidebar .colors img[alt="P_Colors1"],
+    .owl-carousel .sidebar .colors img[alt="P_Colors2"], 
+    .owl-carousel .sidebar .colors img[alt="P_Colors3"] {
+        cursor: pointer;
+        margin-right: 6.5vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Lockup"] {
+        width: 38vw;
+        position: relative;
+        top: -35vh;
+        left: 26vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price"],
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        width: 30vw;
+        position: relative;
+        top: -29vh;
+        left: 54vw;
+    }
+
+    .owl-carousel .sidebar img[alt="Price_150"] {
+        top: -31vh;
+    }
+}
